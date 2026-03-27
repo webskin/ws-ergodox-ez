@@ -28,4 +28,5 @@ nav:
   - Layers: layers.md
   - Features: features.md
   - Migration: migration.md
+  - QMK New Features: qmk-new-features.md
   - Build: build.md
