@@ -13,7 +13,7 @@ Two ErgoDox EZ keyboards sharing one QMK keymap:
 |---|---|---|
 | MCU | Teensy / ATmega32U4 | STM32 / F303 |
 | Variant | Shine (underglow RGB) | Base (no RGB) |
-| Firmware | `.hex` | `.hex` (from `.build/`) |
+| Firmware | `.hex` | `.bin` |
 
 ## Repositories
 
@@ -53,7 +53,7 @@ cp zsa_ergodox_ez_m32u4_shine_webskin.hex ../teensy/
 
 # New board (STM32 + Base)
 make zsa/ergodox_ez/stm32:webskin
-cp .build/zsa_ergodox_ez_stm32_base_webskin.hex ../stm/
+cp zsa_ergodox_ez_stm32_base_webskin.bin ../stm/
 ```
 
 Flash via Keymapp on Windows.
