@@ -30,4 +30,5 @@ nav:
   - Migration: migration.md
   - QMK New Features: qmk-new-features.md
   - BEPO Empty Keys: bepo-empty-keys.md
+  - MISCL1 Empty Keys: miscl1-empty-keys.md
   - Build: build.md
