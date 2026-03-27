@@ -9,7 +9,7 @@ Custom firmware for two ErgoDox EZ keyboards, migrated to ZSA firmware25.
 | **MCU** | Teensy / ATmega32U4 | STM32 / F303 |
 | **Variant** | Shine (underglow RGB) | Base (no RGB) |
 | **Bootloader** | HalfKay | DFU |
-| **Firmware** | `.hex` | `.bin` |
+| **Firmware** | `.hex` | `.hex` |
 
 Both boards share the same keymap source. RGB code is guarded with `#ifdef RGBLIGHT_ENABLE` so it compiles for the Base variant.
 

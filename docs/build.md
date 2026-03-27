@@ -28,26 +28,18 @@ make zsa/ergodox_ez/m32u4/shine:webskin
 
 # New board: STM32 + Base (no RGB)
 make zsa/ergodox_ez/stm32:webskin
-# Output: zsa_ergodox_ez_stm32_base_webskin.bin
+# Output: .build/zsa_ergodox_ez_stm32_base_webskin.hex
 ```
+
+!!! note
+    The STM32 build produces both `.bin` and `.hex` but only copies the `.bin` to the root.
+    The `.hex` is in the `.build/` directory. Keymapp on Windows requires `.hex` format for both boards.
 
 ## Flash
 
-Use [Keymapp](https://www.zsa.io/flash) on Windows to flash the firmware files:
-
-- `.hex` for the Teensy board (HalfKay bootloader)
-- `.bin` for the STM32 board (DFU bootloader)
+Use [Keymapp](https://www.zsa.io/flash) on Windows to flash the `.hex` firmware files.
 
 Access WSL files from Windows at `\\wsl$\Ubuntu\home\...\ws-ergodox-ez\`
-
-## .hex vs .bin
-
-The firmware format depends on the MCU and its bootloader:
-
-| MCU | Bootloader | Format |
-|---|---|---|
-| ATmega32U4 (Teensy) | HalfKay | Intel HEX (`.hex`) |
-| STM32F303 | DFU | Raw binary (`.bin`) |
 
 ## Updating from ZSA Upstream
 
@@ -64,5 +56,5 @@ Built firmware can be copied to the workspace output directories:
 
 ```bash
 cp zsa_ergodox_ez_m32u4_shine_webskin.hex ../teensy/
-cp zsa_ergodox_ez_stm32_base_webskin.bin ../stm/
+cp .build/zsa_ergodox_ez_stm32_base_webskin.hex ../stm/
 ```
