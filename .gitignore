@@ -1,3 +1,4 @@
 qmk_firmware/
 teensy/*.hex
 stm/*.bin
+site/

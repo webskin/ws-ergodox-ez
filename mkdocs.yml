@@ -1,0 +1,31 @@
+site_name: ErgoDox EZ - Webskin Keymap
+site_url: https://webskin.github.io/ws-ergodox-ez/
+repo_url: https://github.com/webskin/ws-ergodox-ez
+repo_name: webskin/ws-ergodox-ez
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: blue
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Layers: layers.md
+  - Features: features.md
+  - Migration: migration.md
+  - Build: build.md
